@@ -1,0 +1,5 @@
+vendor/
+composer.lock
+resources/config/config.php
+.htaccess
+*.temp
