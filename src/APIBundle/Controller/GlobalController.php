@@ -12,8 +12,6 @@ class GlobalController
       return $app->json($res, 200);
     }
 
-    public function testActionpost(Application $app) {
-      $res['message'] = "test message post";
-      return $app->json($res, 200);
-    }
+
+
 }

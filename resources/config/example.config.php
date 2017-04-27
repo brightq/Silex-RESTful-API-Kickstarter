@@ -5,18 +5,19 @@ $app['debug'] = false;
 $app['api.version'] = "v1";
 $app['api.endpoint'] = "https://localhost/api/";
 
-$app['api.tokenkey'] = "exampleKEY";
+$app['api.tokensecret'] = "exampleKEY";
 $app['api.tokenpayload'] = array();
 
 $app['api.enabledb'] = false;
 
+
 /**
  * SQLite database config
  */
-// $app['db.options'] = array(
-//     'driver' => 'pdo_sqlite',
-//     'path' => realpath(ROOT_PATH . '/sqlite.db'),
-// );
+$app['db.options'] = array(
+    'driver' => 'pdo_sqlite',
+    'path' => realpath(ROOT_PATH . '/resources/sqlite.db'),
+);
 
 
 /**
@@ -27,18 +28,18 @@ $app['api.enabledb'] = false;
 //  "user" => "dbusername",
 //  "password" => "password",
 //  "dbname" => "databasename",
-//  "host" => "host",
+//  "host" => "localhost",
 //);
 
 
 /**
  * Postgres database config
  */
-$app['db.options'] = array(
-    'driver' => 'pdo_pgsql',
-    'host' => "192.168.99.100",
-    'dbname' => 'testdb',
-    'user' => 'postgres',
-    'password' => 'mysecretpassword',
-    'port' => '5432',
-);
+// $app['db.options'] = array(
+//     'driver' => 'pdo_pgsql',
+//     'host' => "192.168.99.100",
+//     'dbname' => 'testdb',
+//     'user' => 'postgres',
+//     'password' => 'mysecretpassword',
+//     'port' => '5432',
+// );

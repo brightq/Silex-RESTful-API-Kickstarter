@@ -4,11 +4,21 @@
 use Symfony\Component\Debug\ExceptionHandler;
 
 
+// $app['auth.service'] = function($app) {
+//     return new \APIBundle\Provider\Services\AuthService($app["db"]);
+// };
+
+// $app['auth.controller'] = function($app) {
+//     return new APIBundle\Provider\Controller\AuthControllerProvider($app['auth.service']);
+// };
+        
+
 /**
  * Mount
  */
 $app->mount('/', new APIBundle\Provider\Controller\GlobalControllerProvider());
 $app->mount('/auth', new APIBundle\Provider\Controller\AuthControllerProvider());
+//$app->mount('/auth', $app['auth.controller']);
 
 
 //register an error handler for all other errors

@@ -1,5 +1,5 @@
 # Silex RESTful API Kickstarter
-version 1.0 BQ20170426
+version 1.0 BQ20170427
 
 This is the kickstarter API used for develop a RESTful API with Silex
 
@@ -15,12 +15,6 @@ This is the kickstarter API used for develop a RESTful API with Silex
 | POST| /api/auth/resetPassword | Reset login Password|
 | POST| /api/auth/login | User login return token|
 | GET| /api/auth/extendtoken | Get extent token for keep the session |
-| | | |
-| GET | /api/user/{id}| |
-| POST | /api/user| |
-| PUT | /api/user/{id}| |
-| PATCH | /api/user/{id}/password| Reset password |
-| DELETE | /api/user/{id}| |
 | | | |
 | GET | /api/articles| Retrive a list of article |
 | GET | /api/article/{id}| |
@@ -48,7 +42,7 @@ This is the kickstarter API used for develop a RESTful API with Silex
   * **Data Params**
     ````
     {
-          "username": "testuser"
+          "username": "test1"
     }
     ````
 
@@ -70,7 +64,7 @@ This is the kickstarter API used for develop a RESTful API with Silex
 
   * **Sample Call:**
 
-    `curl --request POST  --url https://localhost/api/resetPassword --header 'cache-control: no-cache'  --data '{"username": "testuser"}'`
+    `curl --request POST  --url https://localhost/api/resetPassword --header 'cache-control: no-cache'  --data '{"username": "test1"}'`
 
 
 
